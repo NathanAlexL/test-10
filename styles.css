@@ -1,37 +1,28 @@
-/* Reset des styles par défaut */
+/* Réinitialisation des styles par défaut */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Styles généraux */
+/* Styles de base */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f5e99f;
     color: #333;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #ffffff;
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #1c2361;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-header h1 {
-    font-size: 2rem;
-    color: #333;
-}
-
-header h2 {
-    font-size: 1.2rem;
-    color: #666;
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -45,56 +36,52 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c7dceb;
 }
 
 main {
-    padding: 40px 0;
+    padding: 20px;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-form label {
-    display: block;
+h2 {
+    font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
-form input[type="text"],
-form input[type="password"] {
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-form button {
-    background-color: #007bff;
-    color: #fff;
+button {
     padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-form button:hover {
-    background-color: #0056b3;
-}
-
-footer {
-    background-color: #333;
+    background-color: #5c87db;
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-footer p {
-    font-size: 0.9rem;
+button:hover {
+    background-color: #1c2361;
 }
