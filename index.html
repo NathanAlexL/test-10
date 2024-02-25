@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educours - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Educours</h1>
+            <h2>Pour une éducation collective</h2>
+            <nav>
+                <ul>
+                    <li><a href="#login">Se connecter</a></li>
+                    <li><a href="#inscription">Créer un compte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="login">
+            <div class="container">
+                <h2>Se connecter</h2>
+                <form action="login.php" method="post">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Se connecter</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="inscription">
+            <div class="container">
+                <h2>Créer un compte</h2>
+                <form action="inscription.php" method="post">
+                    <label for="new-username">Nom d'utilisateur</label>
+                    <input type="text" id="new-username" name="new-username" required>
+                    <label for="new-password">Mot de passe</label>
+                    <input type="password" id="new-password" name="new-password" required>
+                    <button type="submit">Créer un compte</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Educours. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
